@@ -31,8 +31,8 @@ h2 {
     font-family: 'Fredoka One', cursive;
     font-size: 45px;
     text-align: center;
-   
-    
+
+
 }
 
 ul {
@@ -107,7 +107,7 @@ footer {
 
     height: 60px;
     background-color: #88DCA1;
-    margin: 20px 0 20px; 
+    margin: 20px 0 20px;
     text-align: center;
     padding-top: 10px;
 
@@ -117,10 +117,17 @@ footer {
     margin-top: 10px;
     background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
     background-repeat: no-repeat;
-
     background-size: cover;
     height: 950px;
-   
 
+}
 
+.nuevosTestimonios{
+    align-items: center;
+    text-align: center;
+}
+
+.dolenciasPosologia{
+   align-items: center;
+   text-align: center;
 }
