@@ -10,50 +10,6 @@
     padding: 20px;
 }
 
-h1 {
-    color: #88DBA1;
-    font-size: 60px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.2);
-    font-family: 'Fredoka One', cursive;
-}
-
-.subtitle {
-    color: coral;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-    color: #9588DB;
-    font-family: 'Fredoka One', cursive;
-    font-size: 45px;
-    text-align: center;
-
-
-}
-
-h3 {
-    color: #9588DB;
-    font-family: 'Fredoka One', cursive;
-    font-size: 26px;
-    text-align: center;
-
-
-}
-
-ul {
-    background-color: antiquewhite;
-}
-
-#listOrder {
-
-    background-color: darkslategray;
-    list-style-type: upper-alpha;
-}
-
 .mainMenu li {
     display: inline-block;
     align-items: center;
@@ -74,6 +30,51 @@ ul {
 
 }
 
+
+h1 {
+    color: #88DBA1;
+    font-size: 60px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Fredoka One', cursive;
+}
+
+h2 {
+    color: #9588DB;
+    font-family: 'Fredoka One', cursive;
+    font-size: 45px;
+    text-align: center;
+
+
+}
+
+/* clase para los sutitulos en h2*/
+.subtitle {
+    color: coral;
+}
+h3 {
+    color: #9588DB;
+    font-family: 'Fredoka One', cursive;
+    font-size: 26px;
+    text-align: center;
+
+
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    background-color: antiquewhite;
+}
+
+#listOrder {
+
+    background-color: darkslategray;
+    list-style-type: upper-alpha;
+}
+/* formateo de la tabla de posología*/
 table {
 
 
@@ -81,6 +82,13 @@ table {
     text-align: center;
     padding: 10px;
 
+
+}
+
+caption {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+    padding: 20px;
+    color: brown;
 
 }
 
@@ -97,13 +105,8 @@ td {
     padding: 5px;
 }
 
-caption {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
-    padding: 20px;
-    color: brown;
 
-}
-
+/*Parrafo ref a descripción de seccion beneficios del  CDS*/
 .descripcion {
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -114,16 +117,8 @@ caption {
 
 }
 
-footer {
 
-    height: 60px;
-    background-color: #88DCA1;
-    margin: 20px 0 20px;
-    text-align: center;
-    padding-top: 10px;
-
-}
-
+/*clase de la sección beneficios del CDS*/
 .beneficiosDioxido {
     margin-top: 10px;
     background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
@@ -138,5 +133,12 @@ footer {
     text-align: center;
 }
 
+footer {
 
+    height: 60px;
+    background-color: #88DCA1;
+    margin: 20px 0 20px;
+    text-align: center;
+    padding-top: 10px;
 
+}
