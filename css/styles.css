@@ -35,6 +35,15 @@ h2 {
 
 }
 
+h3 {
+    color: #9588DB;
+    font-family: 'Fredoka One', cursive;
+    font-size: 26px;
+    text-align: center;
+
+
+}
+
 ul {
     background-color: antiquewhite;
 }
@@ -66,6 +75,8 @@ ul {
 }
 
 table {
+
+
     background-color: blueviolet;
     text-align: center;
     padding: 10px;
@@ -122,12 +133,10 @@ footer {
 
 }
 
-.nuevosTestimonios{
+.nuevosTestimonios {
     align-items: center;
     text-align: center;
 }
 
-.dolenciasPosologia{
-   align-items: center;
-   text-align: center;
-}
+
+
