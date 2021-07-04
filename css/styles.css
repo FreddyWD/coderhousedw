@@ -5,6 +5,11 @@
 
 
 .headerPrincipal {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
     background-color: #A3DFF3;
     height: 60px;
     padding: 20px;
