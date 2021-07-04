@@ -142,3 +142,8 @@ footer {
     padding-top: 10px;
 
 }
+
+.testimoniosVideos{
+    display: flex;
+    justify-content: space-around;
+}
