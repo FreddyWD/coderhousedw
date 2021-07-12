@@ -141,7 +141,7 @@ td {
 .nuevosTestimonios {
     align-items: center;
     text-align: center;
-    
+
 }
 
 footer {
@@ -157,7 +157,7 @@ footer {
 .testimoniosVideos {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 .testyDolencias {
@@ -166,7 +166,7 @@ footer {
     grid-area: area2;
     background: rgb(163, 223, 243);
     background: linear-gradient(0deg, rgba(163, 223, 243, 1) 0%, rgba(255, 255, 254, 1) 100%);
-    
+
 }
 
 
@@ -176,8 +176,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr 1fr;
     grid-template-areas: "area1"
-                         "area2"
-                         "area3";
+        "area2"
+        "area3";
     justify-content: center;
     grid-row-gap: 10px;
 
@@ -195,12 +195,32 @@ footer {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
-    
+
 }
 
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.etiquetaProductos {
+    
+    padding: 10px;
+    text-align: center;
+   
+}
+
+.etiquetaProductos img{
+
+    width: 600px;
+    height: 400px;
+}
 
 
 @media only screen and (max-width:600px) {
@@ -225,7 +245,7 @@ footer {
     h1 {
         font-size: 45px;
         animation-duration: 2s;
-        animation-name: aparecer;    
+        animation-name: aparecer;
 
     }
 
@@ -256,12 +276,12 @@ footer {
 
     h1 {
         color: bisque;
-         animation-duration: 2s;
-         animation-name: aparecer;
+        animation-duration: 2s;
+        animation-name: aparecer;
     }
 
     h2 {
-        
+
         animation-duration: 3s;
         animation-name: aparecer;
     }
