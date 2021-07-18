@@ -222,7 +222,7 @@ footer {
     height: 400px;
 }
 
-/* ** Desactivo los @mediaQuery para plicar boostrap**
+
 @media only screen and (max-width:600px) {
 
 
@@ -301,4 +301,15 @@ footer {
 
 
 }
-/*
+.container-fluid{
+    background-color: #9588DB;
+    height: 80px;
+
+}
+
+.row{
+    background-color: black;
+    height: 20px;
+    margin: 4px;
+
+}
