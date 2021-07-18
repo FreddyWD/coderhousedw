@@ -5,11 +5,9 @@
 
 }
 
-/*Entrega clase 9 apliqué bootstrap a tabla de Dolencias y posologias index*/
-        /*Mofifiqué los estilos de la tabla*/
-    /*Se aplicó bootstrap a el form de contacto*/
-        /*Se modificaron los estilos al igual que la pseudo-clase :hover*/
-    /* Se aplico al formulario de la página de cuenta*/
+/* Entrega clase 10 */
+    /* Slider en el index */
+     /* Modal con boton de ofertas y formulario en página productos*/ 
 
 .headerPrincipal {
     position: sticky;
@@ -22,6 +20,10 @@
     padding: 20px;
 }
 
+.ofertaButton{
+    display: flex;
+    justify-content: center;
+}
 
 .mainMenu li {
     display: inline-block;
