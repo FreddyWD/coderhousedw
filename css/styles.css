@@ -5,6 +5,11 @@
 
 }
 
+/*Entrega clase 9 apliqué boostrap a tabla de Dolencias y posologias index*/
+        /*Mofifiqué los estilos de la tabla*/
+    /*Se aplicó boostrap a el form de contacto*/
+        /*Se modificaron los estilos al igual que la pseudo-clase :hover*/
+    /* Se aplico al formulario de la página de cuenta*/
 
 .headerPrincipal {
     position: sticky;
@@ -16,6 +21,7 @@
     height: 60px;
     padding: 20px;
 }
+
 
 .mainMenu li {
     display: inline-block;
@@ -95,8 +101,9 @@ table {
 }
 
 caption {
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
-    padding: 20px;
+    padding: 10px;
     color: brown;
 
 }
@@ -114,6 +121,9 @@ td {
     padding: 5px;
 }
 
+.cuentaMain{
+    margin-left: 10px;
+}
 
 /*Parrafo ref a descripción de seccion beneficios del  CDS*/
 .descripcion {
@@ -129,12 +139,13 @@ td {
 
 /*clase de la sección beneficios del CDS*/
 .beneficiosDioxido {
+    
     margin-top: 10px;
     background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+    background-size:contain;
+    width: auto;
+    height: auto;
 
 }
 
@@ -144,6 +155,7 @@ td {
 
 }
 
+/* Estilos del Footer*/
 footer {
 
     height: 60px;
@@ -159,7 +171,7 @@ footer {
     justify-content: space-around;
 
 }
-
+/* Convirtiendo en flex al div */
 .testyDolencias {
     display: flex;
     justify-content: center;
@@ -170,7 +182,7 @@ footer {
 }
 
 
-
+/* Aplicando grid en el main del index*/
 .mainIndex {
     display: grid;
     grid-template-columns: 1fr;
@@ -189,7 +201,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
+/* Animación para h1 y h2*/
 @keyframes aparecer {
 
     0% {
@@ -222,7 +234,23 @@ footer {
     height: 400px;
 }
 
+.formMain{
+    margin-left: 10px;
+}
+/* Cambio los colores por defecto de la clase btn-primary de boostrap*/
+.btn-primary{
+    background-color: rgb(228, 174, 179);
+    border: #88DBA1;
+    
+}
+/* Cambio el color en el hover de la clase btn-primary de Boostrap*/
+.btn-primary:hover{
 
+    background-color:#88DBA1;
+    
+}
+
+/*Agrego los MediaQuery*/
 @media only screen and (max-width:600px) {
 
 
@@ -300,21 +328,4 @@ footer {
     }
 
 
-}
-.container-fluid{
-    background-color: #9588DB;
-    height: 80px;
-
-}
-
-.row{
-    background-color: black;
-    height: 20px;
-    margin: 4px;
-
-}
-
-.col {
-    background-color: antiquewhite;
-    margin: 3px;
 }
