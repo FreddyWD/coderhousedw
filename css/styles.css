@@ -301,3 +301,20 @@ footer {
 
 
 }
+.container-fluid{
+    background-color: #9588DB;
+    height: 80px;
+
+}
+
+.row{
+    background-color: black;
+    height: 20px;
+    margin: 4px;
+
+}
+
+.col {
+    background-color: antiquewhite;
+    margin: 3px;
+}
