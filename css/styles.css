@@ -5,9 +5,9 @@
 
 }
 
-/*Entrega clase 9 apliqué boostrap a tabla de Dolencias y posologias index*/
+/*Entrega clase 9 apliqué bootstrap a tabla de Dolencias y posologias index*/
         /*Mofifiqué los estilos de la tabla*/
-    /*Se aplicó boostrap a el form de contacto*/
+    /*Se aplicó bootstrap a el form de contacto*/
         /*Se modificaron los estilos al igual que la pseudo-clase :hover*/
     /* Se aplico al formulario de la página de cuenta*/
 
@@ -73,6 +73,30 @@ h3 {
     text-align: center;
 
 
+}
+
+/* Centrando el carousel*/
+.carouselSection{
+    display: flex;
+    justify-content: center;
+}
+/*Cambiando tamaño del carousel*/
+.carousel {
+   
+    width: 800px;
+    height: auto;
+}
+
+.carouselSection h5{
+    color: coral;
+    font-weight: 800;
+    font-size: 36px;
+    
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
 }
 
 p {
@@ -182,8 +206,8 @@ footer {
 }
 
 
-/* Aplicando grid en el main del index*/
-.mainIndex {
+/* Eliminado Grid en el main del index*/
+/*.mainIndex {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr 1fr;
@@ -193,7 +217,7 @@ footer {
     justify-content: center;
     grid-row-gap: 10px;
 
-}
+}*/
 
 .dolenciasPosologia {
     display: flex;
