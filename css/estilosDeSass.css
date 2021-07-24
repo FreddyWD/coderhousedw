@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica*/
+.informacionTecnica {
+  background-color: #ffebeb; }
+  .informacionTecnica__lista {
+    list-style: circle; }
+  .informacionTecnica__h1 {
+    color: red; }
+
+/* Aplicando estilos con SASS + BEM lo beneficios*/
+.beneficiosOl {
+  background-color: aliceblue; }
+  .beneficiosOl__item {
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+
+/*Aplicando estilo SASS a index p descripción*/
+.descripcion {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 800; }

@@ -1,0 +1,35 @@
+/* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica*/
+.informacionTecnica {
+
+    background-color: rgb(255, 235, 235);
+
+    &__lista {
+
+
+        list-style: circle;
+
+    }
+
+    &__h1 {
+        color: red;
+    }
+}
+
+/* Aplicando estilos con SASS + BEM lo beneficios*/
+.beneficiosOl {
+    background-color: aliceblue;
+
+    &__item {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+/*Aplicando estilo SASS a index p descripción*/
+
+.descripcion{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+

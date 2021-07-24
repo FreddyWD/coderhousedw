@@ -112,7 +112,7 @@ ul {
 
 #listOrder {
 
-    background-color: darkslategray;
+    
     list-style-type: upper-alpha;
 }
 
@@ -358,7 +358,7 @@ footer {
 
 
 }
-
+/* Efecto en hover y sombra*/
 .card-img-top:hover{
 
     transform: scale(1.1);

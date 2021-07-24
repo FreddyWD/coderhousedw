@@ -12,9 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    
+
+
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/estilosDeSass.css">
     <title>Dioxido de Cloro Uy::Mi Cuenta::</title>
 </head>
 
@@ -34,24 +35,24 @@
     </header>
     <!-- Formulario para el ingreso de usuarios-->
     <main class="cuentaMain">
-    <section>
-        <h1>Cuenta</h1>
-        <img src="./img/userPassword_.png" alt="Ingreso de Usuario">
-        <form action="">
+        <section class="cuenta">
+            <h1 class="cuenta__h1">Cuenta</h1>
+            <img src="./img/userPassword_.png" alt="Ingreso de Usuario">
+            <form action="">
 
-            <fieldset>
+                <fieldset>
 
-                <legend>Ingresa a tu cuenta...</legend>
-                <label for="nombreUsuario">Nombre de Usuario </label>
-                <input type="text" name="nombreUsuario" class="form-control">
-                <label for="passwordUsuario" >Password</label>
-                <input type="password" name="passwordUsuario" class="form-control">
-                <input type="submit" class="btn btn-primary" value="Enviar">
+                    <legend>Ingresa a tu cuenta...</legend>
+                    <label for="nombreUsuario">Nombre de Usuario </label>
+                    <input type="text" name="nombreUsuario" class="form-control cuenta__usuarioName">
+                    <label for="passwordUsuario">Password</label>
+                    <input type="password" name="passwordUsuario" class="form-control">
+                    <input type="submit" class="btn btn-primary" value="Enviar">
 
-            </fieldset>
+                </fieldset>
 
-        </form>
-    </section>
+            </form>
+        </section>
     </main>
     <!-- Pie de página hacia las redes sociales-->
     <footer>
