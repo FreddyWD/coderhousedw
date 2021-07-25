@@ -9,8 +9,9 @@
         list-style: circle;
 
     }
-    &__item{
-        &--destacado{
+
+    &__item {
+        &--destacado {
             font-size: 22px;
         }
     }
@@ -26,7 +27,8 @@
 
     &__item {
         font-family: Georgia, 'Times New Roman', Times, serif;
-        &--destacado{
+
+        &--destacado {
             text-decoration: underline;
             font-weight: 800;
         }
@@ -35,10 +37,55 @@
 
 /*Aplicando estilo SASS a index p descripción*/
 
-.descripcion{
+.descripcion {
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: 800;
 }
 
+/*Agregados para el desafío complementario*/
+    /*Se agregó nueva sección de card de BT con testimonios Fotos*/
+    /* Se agregó sección de noticias en el index*/
+    /*Se aplicó Sass + Bem + modificador + container de BT*/
+
+.testimoniosFotos {
+    background-color: bisque;
+    margin-top: 15px;
+    margin-bottom: 35px;
+
+    &__p--fontStyle {
+        font-style: italic;
+        text-align: center;
+    }
+
+    &__p--Destacado {
+        font-weight: 600;
+    }
+}
+
+/*Solo para darle un margin*/
+.cardTestimonio {
+    margin-bottom: 10px;
+}
+
+.noticias {
+    background-color: bisque;
+    padding: 10px;
+    &__div {
+        border: 3px;
+        border-style: groove;
+        border-color: cadetblue;
+        margin: 10px;
+        padding: 10px;
+        &__p{
+        text-align: center;
+        &--destacado{
+            border-style: dotted;
+            padding: 10px;
+        }
+    }
+        
+    }
+    
+}
