@@ -1,17 +1,22 @@
 @charset "UTF-8";
-/* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica*/
+/* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica y modificador*/
 .informacionTecnica {
   background-color: #ffebeb; }
   .informacionTecnica__lista {
     list-style: circle; }
+  .informacionTecnica__item--destacado {
+    font-size: 22px; }
   .informacionTecnica__h1 {
     color: red; }
 
-/* Aplicando estilos con SASS + BEM lo beneficios*/
+/* Aplicando estilos con SASS + BEM y modificador lo beneficios*/
 .beneficiosOl {
   background-color: aliceblue; }
   .beneficiosOl__item {
     font-family: Georgia, 'Times New Roman', Times, serif; }
+    .beneficiosOl__item--destacado {
+      text-decoration: underline;
+      font-weight: 800; }
 
 /*Aplicando estilo SASS a index p descripción*/
 .descripcion {

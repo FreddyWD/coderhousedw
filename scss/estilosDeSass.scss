@@ -1,4 +1,4 @@
-/* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica*/
+/* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica y modificador*/
 .informacionTecnica {
 
     background-color: rgb(255, 235, 235);
@@ -9,18 +9,27 @@
         list-style: circle;
 
     }
+    &__item{
+        &--destacado{
+            font-size: 22px;
+        }
+    }
 
     &__h1 {
         color: red;
     }
 }
 
-/* Aplicando estilos con SASS + BEM lo beneficios*/
+/* Aplicando estilos con SASS + BEM y modificador lo beneficios*/
 .beneficiosOl {
     background-color: aliceblue;
 
     &__item {
         font-family: Georgia, 'Times New Roman', Times, serif;
+        &--destacado{
+            text-decoration: underline;
+            font-weight: 800;
+        }
     }
 }
 
