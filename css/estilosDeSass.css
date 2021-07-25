@@ -56,3 +56,9 @@
       .noticias__div__p--destacado {
         border-style: dotted;
         padding: 10px; }
+
+.divItem {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 6px; }
