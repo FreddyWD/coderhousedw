@@ -1,8 +1,12 @@
 /* Utilizando variables e importándolas*/
+
+/* asigno un valor a la variable*/
 $tamañoH2: 2px;
 
+/* Realizao la importación de las variables para los colores del h2*/
 @import "coloresFuentes.scss";
 
+/* Se contruye un mixin para ser utilizado en los párrafos*/
 @mixin beneficiosParrafos ($colorTexto,$colorFondo,$tamanoTexto,$colorBorde) {
 
     color: $colorTexto;
@@ -125,10 +129,13 @@ $tamañoH2: 2px;
 }
 
 
-
+/* Se agregó la página Beneficios se dio estilo directo con Sass al article .beneficios, h2, parrafos*/
+/* Se aplicaron colores con variables importadas de otro fichero se realizaron anidamientos y cálculos para el tamaño del h2*/
+/* Se utiliza mixin para aplicarle estilo a los párrafos*/
 .beneficios {
 
-
+    padding: 6px;
+    background-color: aliceblue;
 
     &__h2--color {
 

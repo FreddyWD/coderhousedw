@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* Utilizando variables e importándolas*/
+/* asigno un valor a la variable*/
+/* Realizao la importación de las variables para los colores del h2*/
 /* Colores pasa las fuentes*/
+/* Se contruye un mixin para ser utilizado en los párrafos*/
 /* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica y modificador*/
 .informacionTecnica {
   background-color: #ffebeb; }
@@ -65,23 +68,26 @@
   align-content: center;
   margin: 6px; }
 
-.beneficios__h2--color {
-  color: #9588DB; }
-
-.beneficios__h2--color {
-  color: #FF7F50; }
-
-.beneficios__p--formato {
-  color: black;
-  background-color: #CFE2FF;
-  font-size: 16px;
+/* Se agregó la página Beneficios se dio estilo directo con Sass al article .beneficios, h2, parrafos*/
+/* Se aplicaron colores con variables importadas de otro fichero se realizaron anidamientos y cálculos para el tamaño del h2*/
+/* Se utiliza mixin para aplicarle estilo a los párrafos*/
+.beneficios {
   padding: 6px;
-  border-top: 2px;
-  border-right: 0px;
-  border-left: 0px;
-  border-style: solid;
-  border-color: brown;
-  box-shadow: 15px 6px #cbdddd; }
-
-.beneficios__h2--size {
-  font-size: 44px; }
+  background-color: aliceblue; }
+  .beneficios__h2--color {
+    color: #9588DB; }
+  .beneficios__h2--color {
+    color: #FF7F50; }
+  .beneficios__p--formato {
+    color: black;
+    background-color: #CFE2FF;
+    font-size: 16px;
+    padding: 6px;
+    border-top: 2px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: brown;
+    box-shadow: 15px 6px #cbdddd; }
+  .beneficios__h2--size {
+    font-size: 44px; }
