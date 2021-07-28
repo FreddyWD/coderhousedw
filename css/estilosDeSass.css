@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Utilizando variables e importándolas*/
+/* Colores pasa las fuentes*/
 /* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica y modificador*/
 .informacionTecnica {
   background-color: #ffebeb; }
@@ -62,3 +64,24 @@
   justify-content: center;
   align-content: center;
   margin: 6px; }
+
+.beneficios__h2--color {
+  color: #9588DB; }
+
+.beneficios__h2--color {
+  color: #FF7F50; }
+
+.beneficios__p--formato {
+  color: black;
+  background-color: #CFE2FF;
+  font-size: 16px;
+  padding: 6px;
+  border-top: 2px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
+  border-color: brown;
+  box-shadow: 15px 6px #cbdddd; }
+
+.beneficios__h2--size {
+  font-size: 44px; }

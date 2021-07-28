@@ -1,3 +1,26 @@
+/* Utilizando variables e importándolas*/
+$tamañoH2: 2px;
+
+@import "coloresFuentes.scss";
+
+@mixin beneficiosParrafos ($colorTexto,$colorFondo,$tamanoTexto,$colorBorde) {
+
+    color: $colorTexto;
+    background-color: $colorFondo;
+    font-size: $tamanoTexto;
+    padding: 6px;
+    border-top: 2px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: $colorBorde;
+    box-shadow: 15px 6px rgb(203, 221, 221);
+    
+
+}
+
+
+
 /* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica y modificador*/
 .informacionTecnica {
 
@@ -45,9 +68,9 @@
 }
 
 /*Agregados para el desafío complementario*/
-    /*Se agregó nueva sección de card de BT con testimonios Fotos*/
-    /* Se agregó sección de noticias en el index*/
-    /*Se aplicó Sass + Bem + modificador + container de BT*/
+/*Se agregó nueva sección de card de BT con testimonios Fotos*/
+/* Se agregó sección de noticias en el index*/
+/*Se aplicó Sass + Bem + modificador + container de BT*/
 
 .testimoniosFotos {
     background-color: bisque;
@@ -71,32 +94,63 @@
 
 .noticias {
     background-color: bisque;
+
     padding: 10px;
+
     &__div {
         border: 3px;
         border-style: groove;
         border-color: cadetblue;
         margin: 10px;
         padding: 10px;
-        &__p{
-        text-align: center;
-        &--destacado{
-            border-style: dotted;
-            padding: 10px;
+
+        &__p {
+            text-align: center;
+
+            &--destacado {
+                border-style: dotted;
+                padding: 10px;
+            }
         }
+
     }
-        
-    }
-    
+
 }
 
-.divItem{
+.divItem {
     display: flex;
     justify-content: center;
     align-content: center;
     margin: 6px;
 }
 
-.celda{
-  //padding: 6px;
+
+
+.beneficios {
+
+
+
+    &__h2--color {
+
+        color: $colorH2;
+
+
+
+    }
+
+    &__h2--color {
+        color: $colorH2Secundario;
+
+    }
+    &__p--formato{
+        @include beneficiosParrafos(black,#CFE2FF, 16px,brown);
+    }
+
+    &__h2--size{
+        font-size: ($tamañoH2) * 22;
+    }
+
+    
+
+
 }

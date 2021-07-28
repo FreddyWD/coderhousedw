@@ -65,7 +65,7 @@ h2 {
 
 /* clase para los sutitulos en h2*/
 .subtitle {
-    color: coral;
+    color: rgb(248, 125, 80);
 }
 
 h3 {
@@ -89,7 +89,7 @@ h3 {
     height: auto;
 }
 
-.carouselSection h5{
+.carouselSection h4{
     color: coral;
     font-weight: 800;
     font-size: 36px;
