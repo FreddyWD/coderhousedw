@@ -62,7 +62,7 @@
         border-style: dotted;
         padding: 10px; }
 
-.divItem {
+.divItem, .empezarCds {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -70,7 +70,8 @@
 
 /* Se agregó la página Beneficios se dio estilo directo con Sass al article .beneficios, h2, parrafos*/
 /* Se aplicaron colores con variables importadas de otro fichero se realizaron anidamientos y cálculos para el tamaño del h2*/
-/* Se utiliza mixin para aplicarle estilo a los párrafos*/
+/* Se utiliza mixin para aplicarle estilos a los párrafos*/
+/* Se utiliza extend en article clase .empezarCds y en p empezarCds__p--mod*/
 .beneficios {
   padding: 6px;
   background-color: aliceblue; }
@@ -78,7 +79,7 @@
     color: #9588DB; }
   .beneficios__h2--color {
     color: #FF7F50; }
-  .beneficios__p--formato {
+  .beneficios__p--formato, .empezarCds__p--mod {
     color: black;
     background-color: #CFE2FF;
     font-size: 16px;
@@ -91,3 +92,8 @@
     box-shadow: 15px 6px #cbdddd; }
   .beneficios__h2--size {
     font-size: 44px; }
+
+.empezarCds {
+  background-color: antiquewhite; }
+  .empezarCds__p--mod {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }

@@ -7,7 +7,7 @@ $tamañoH2: 2px;
 @import "coloresFuentes.scss";
 
 /* Se contruye un mixin para ser utilizado en los párrafos*/
-@mixin beneficiosParrafos ($colorTexto,$colorFondo,$tamanoTexto,$colorBorde) {
+@mixin beneficiosParrafos ($colorTexto, $colorFondo, $tamanoTexto, $colorBorde) {
 
     color: $colorTexto;
     background-color: $colorFondo;
@@ -19,7 +19,7 @@ $tamañoH2: 2px;
     border-style: solid;
     border-color: $colorBorde;
     box-shadow: 15px 6px rgb(203, 221, 221);
-    
+
 
 }
 
@@ -131,7 +131,9 @@ $tamañoH2: 2px;
 
 /* Se agregó la página Beneficios se dio estilo directo con Sass al article .beneficios, h2, parrafos*/
 /* Se aplicaron colores con variables importadas de otro fichero se realizaron anidamientos y cálculos para el tamaño del h2*/
-/* Se utiliza mixin para aplicarle estilo a los párrafos*/
+/* Se utiliza mixin para aplicarle estilos a los párrafos*/
+/* Se utiliza extend en article clase .empezarCds y en p empezarCds__p--mod*/
+
 .beneficios {
 
     padding: 6px;
@@ -149,15 +151,27 @@ $tamañoH2: 2px;
         color: $colorH2Secundario;
 
     }
-    &__p--formato{
-        @include beneficiosParrafos(black,#CFE2FF, 16px,brown);
+
+    &__p--formato {
+        @include beneficiosParrafos(black, #CFE2FF, 16px, brown);
     }
 
-    &__h2--size{
+    &__h2--size {
         font-size: ($tamañoH2) * 22;
     }
 
-    
 
 
+
+}
+
+.empezarCds {
+
+    @extend .divItem;
+    background-color: antiquewhite;
+
+    &__p--mod {
+        @extend .beneficios__p--formato;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 }
