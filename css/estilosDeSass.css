@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* Utilizando variables e importándolas*/
+/* asigno un valor a la variable*/
+/* Realizao la importación de las variables para los colores del h2*/
+/* Colores pasa las fuentes*/
+/* Se contruye un mixin para ser utilizado en los párrafos*/
+/* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica y modificador*/
+.informacionTecnica {
+  background-color: #ffebeb; }
+  .informacionTecnica__lista {
+    list-style: circle; }
+  .informacionTecnica__item--destacado {
+    font-size: 22px; }
+  .informacionTecnica__h1 {
+    color: red; }
+
+/* Aplicando estilos con SASS + BEM y modificador lo beneficios*/
+.beneficiosOl {
+  background-color: aliceblue; }
+  .beneficiosOl__item {
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+    .beneficiosOl__item--destacado {
+      text-decoration: underline;
+      font-weight: 800; }
+
+/*Aplicando estilo SASS a index p descripción*/
+.descripcion {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 800; }
+
+/*Agregados para el desafío complementario*/
+/*Se agregó nueva sección de card de BT con testimonios Fotos*/
+/* Se agregó sección de noticias en el index*/
+/*Se aplicó Sass + Bem + modificador + container de BT*/
+.testimoniosFotos {
+  background-color: bisque;
+  margin-top: 15px;
+  margin-bottom: 35px; }
+  .testimoniosFotos__p--fontStyle {
+    font-style: italic;
+    text-align: center; }
+  .testimoniosFotos__p--Destacado {
+    font-weight: 600; }
+
+/*Solo para darle un margin*/
+.cardTestimonio {
+  margin-bottom: 10px; }
+
+.noticias {
+  background-color: bisque;
+  padding: 10px; }
+  .noticias__div {
+    border: 3px;
+    border-style: groove;
+    border-color: cadetblue;
+    margin: 10px;
+    padding: 10px; }
+    .noticias__div__p {
+      text-align: center; }
+      .noticias__div__p--destacado {
+        border-style: dotted;
+        padding: 10px; }
+
+.divItem, .empezarCds {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 6px; }
+
+/* Se agregó la página Beneficios se dio estilo directo con Sass al article .beneficios, h2, parrafos*/
+/* Se aplicaron colores con variables importadas de otro fichero se realizaron anidamientos y cálculos para el tamaño del h2*/
+/* Se utiliza mixin para aplicarle estilos a los párrafos*/
+/* Se utiliza extend en article clase .empezarCds y en p empezarCds__p--mod*/
+.beneficios {
+  padding: 6px;
+  background-color: aliceblue; }
+  .beneficios__h2--color {
+    color: #9588DB; }
+  .beneficios__h2--color {
+    color: #FF7F50; }
+  .beneficios__p--formato, .empezarCds__p--mod {
+    color: black;
+    background-color: #CFE2FF;
+    font-size: 16px;
+    padding: 6px;
+    border-top: 2px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: brown;
+    box-shadow: 15px 6px #cbdddd; }
+  .beneficios__h2--size {
+    font-size: 44px; }
+
+.empezarCds {
+  background-color: antiquewhite; }
+  .empezarCds__p--mod {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.error404 {
+  margin-top: 100px;
+  margin-bottom: 100px; }

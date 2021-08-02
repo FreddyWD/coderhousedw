@@ -1,0 +1,25 @@
+{
+  "name": "coderhousedw",
+  "version": "1.0.0",
+  "description": "proyectosCoderHouseWebDesign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilosDeSass.scss css/estilosDeSass.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freddywebmaster/coderhousedw.git"
+  },
+  "author": "Freddy Barreiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freddywebmaster/coderhousedw/issues"
+  },
+  "homepage": "https://github.com/freddywebmaster/coderhousedw#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
