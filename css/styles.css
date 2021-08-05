@@ -6,21 +6,25 @@
 }
 
 /* Entrega clase 10 */
-    /* Slider en el index */
-     /* Modal con boton de ofertas y formulario en página productos*/ 
+/* Slider en el index */
+/* Modal con boton de ofertas y formulario en página productos*/
 
 .headerPrincipal {
-    position: sticky;
-    top: 0px;
+
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #A3DFF3;
-    height: 60px;
-    padding: 20px;
+    background-color: rgba(163, 223, 243, 0.7);
+    border: 0px;
+    height: 90px;
+    padding: 30px;
+    box-shadow: -5px 11px 21px -13px rgba(0, 0, 0, 0.75);
+    /*background-color: #A3DFF3;*/
+
 }
 
-.ofertaButton{
+.ofertaButton {
     display: flex;
     justify-content: center;
 }
@@ -78,41 +82,40 @@ h3 {
 }
 
 /* Centrando el carousel*/
-.carouselSection{
+.carouselSection {
     display: flex;
     justify-content: center;
 }
+
 /*Cambiando tamaño del carousel*/
 .carousel {
-   
+
     width: 800px;
     height: auto;
 }
 
-.carouselSection h4{
+.carouselSection h4 {
     color: coral;
     font-weight: 800;
     font-size: 36px;
-    
+
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
-ul {
-    background-color: antiquewhite;
-}
+
 
 #listOrder {
 
-    
+
     list-style-type: upper-alpha;
 }
 
@@ -148,7 +151,7 @@ td {
     padding: 5px;
 }
 
-.cuentaMain{
+.cuentaMain {
     margin-left: 10px;
 }
 
@@ -166,13 +169,23 @@ td {
 
 /*clase de la sección beneficios del CDS*/
 .beneficiosDioxido {
+
     
-    margin-top: 10px;
     background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     width: auto;
     height: auto;
+
+
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
 }
 
@@ -198,6 +211,7 @@ footer {
     justify-content: space-around;
 
 }
+
 /* Convirtiendo en flex al div */
 .testyDolencias {
     display: flex;
@@ -228,6 +242,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 /* Animación para h1 y h2*/
 @keyframes aparecer {
 
@@ -251,42 +266,45 @@ footer {
 
 
 .etiquetaProductos {
-    
+
     padding: 10px;
     text-align: center;
-   
+
 }
 
-.etiquetaProductos img{
+.etiquetaProductos img {
 
     width: 600px;
     height: 400px;
 }
 
-.formMain{
+.formMain {
     margin-left: 10px;
 }
+
 /* Cambio los colores por defecto de la clase btn-primary de boostrap*/
-.btn-primary{
+.btn-primary {
     background-color: rgb(228, 174, 179);
     border: #88DBA1;
-    
-}
-/* Cambio el color en el hover de la clase btn-primary de Boostrap*/
-.btn-primary:hover{
 
-    background-color:#88DBA1;
-    
+}
+
+/* Cambio el color en el hover de la clase btn-primary de Boostrap*/
+.btn-primary:hover {
+
+    background-color: #88DBA1;
+
 }
 
 /*Agrego los MediaQuery*/
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:629px) {
 
 
 
     .beneficiosDioxido {
-        background-image: url("../img/dioxido-de-cloro-600.jpg");
-        background-size: contain;
+       /* background-image: url("../img/dioxido-de-cloro-600.jpg");
+        background-size: contain;*/
+
     }
 
     .mainIndex {
@@ -295,7 +313,7 @@ footer {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "area1""area2"" area3";
         justify-content: center;
-        grid-row-gap: 2px;
+        /*grid-row-gap: 2px;*/
 
     }
 
@@ -312,21 +330,26 @@ footer {
         animation-name: aparecer;
     }
 
+    .nav {
+        background-color: rgba(163, 223, 243, 0.9);
+        box-shadow: -5px 11px 21px -13px rgba(0, 0, 0, 0.75);
+
+    }
+
 
 
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:631px) {
 
-    h1 {
-        color: black;
 
-    }
 
     .beneficiosDioxido {
-        background-image: url("../img/dioxido-de-cloro-750.jpg");
-        background-size: cover;
+        /*background-image: url("../img/dioxido-de-cloro-750.jpg");
+        background-size: cover;*/
     }
+
+
 }
 
 @media only screen and (min-width:768px) {
@@ -344,25 +367,32 @@ footer {
     }
 
     .beneficiosDioxido {
-        background-image: url("../img/dioxido-de-cloro-850.jpg");
-        background-size: cover;
+        /*background-image: url("../img/dioxido-de-cloro-850.jpg");
+        background-size: cover;*/
     }
+
+
 }
 
 @media only screen and (min-width:992px) {
 
     .beneficiosDioxido {
-        background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
-        background-size: cover;
+       /* background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
+        background-size: cover;*/
     }
 
 
 }
+
 /* Efecto en hover y sombra*/
-.card-img-top:hover{
+.card-img-top:hover {
 
     transform: scale(1.1);
     transition: 1s;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+    color: #9588DB;
 }
