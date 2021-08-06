@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(163, 223, 243, 0.7);
+    background-color: rgba(165, 209, 247,.9);
     border: 0px;
     height: 90px;
     padding: 30px;
@@ -47,6 +47,12 @@
     font-style: oblique;
     color: #9588DB;
 
+}
+
+.nav-link {
+    color: #9588DB;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:medium;
 }
 
 
@@ -171,14 +177,14 @@ td {
 .beneficiosDioxido {
 
     
-    background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
+    background-image: url("../img/cds-dioxido-de-cloro-uruguay.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: auto;
     height: auto;
 
 
-    min-height: 500px;
+    min-height: 650px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -313,6 +319,7 @@ footer {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "area1""area2"" area3";
         justify-content: center;
+        padding: 0px;
         /*grid-row-gap: 2px;*/
 
     }
@@ -331,9 +338,14 @@ footer {
     }
 
     .nav {
-        background-color: rgba(163, 223, 243, 0.9);
-        box-shadow: -5px 11px 21px -13px rgba(0, 0, 0, 0.75);
+        background-color: rgb(165, 209, 247);
+        
+       
 
+    }
+    .nav-link {
+       
+        font-size: smaller;
     }
 
 
@@ -348,6 +360,7 @@ footer {
         /*background-image: url("../img/dioxido-de-cloro-750.jpg");
         background-size: cover;*/
     }
+    
 
 
 }
@@ -396,3 +409,11 @@ footer {
 .nav-link {
     color: #9588DB;
 }
+
+.linea{
+    position: relative;
+    top: -100px;
+   background-image: url("../img/linea.svg");
+   height: 100px;
+}
+
