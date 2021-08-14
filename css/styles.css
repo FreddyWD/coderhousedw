@@ -59,7 +59,7 @@
 
 
 h1 {
-    color: #88DBA1;
+    color: #9588DB;
     font-size: 60px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
@@ -179,16 +179,12 @@ td {
 .beneficiosDioxido {
 
     display: flex-inline;
-
-
-
-
-
     background-image: url("../img/cds-dioxido-de-cloro-uruguay.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: auto;
     height: auto;
+
 
 
     min-height: 650px;
@@ -319,15 +315,15 @@ footer {
         padding-top: 60px;
     }
 
-    
 
-   
+
+
 
     .elementos {
         display: flex;
     }
 
-   
+
 
 
 
@@ -336,15 +332,13 @@ footer {
 @media only screen and (max-width:768px) {
 
     h1 {
-        color: bisque;
-        animation-duration: 2s;
-        animation-name: aparecer;
+       font-size: xx-large;
+       margin-top: 60PX;
     }
 
     h2 {
 
-        animation-duration: 3s;
-        animation-name: aparecer;
+        font-size: x-large;
     }
 
     .beneficiosDioxido {
@@ -376,9 +370,9 @@ footer {
         background-size: cover;*/
     }
 
-    
 
-   
+
+
 
 
 }
@@ -403,21 +397,70 @@ footer {
     height: 100px;
 }
 
-
-
-.primero {
-    text-align: center;
-    margin: 10px;
-
-
-
-
-
-
-
+.patogenos {
+    position: relative;
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-around;
 }
 
-.elementos {
-    justify-content: center;
+
+
+.patogenoDos{
+    transform: rotate(360deg);
+    transition: all 8s;
+    animation-duration: 10s;
+}
+.patogenoUno{
+    transform: translate(40px, 25%);
+    transition: all 10s;
+    animation-duration: 10s;
+}
+.patogenoTres{
+    transform: rotate(180deg);
+    transition: all 4s;
+    animation-duration: 10s;
+}
+
+.patogenoCuatro{
+    position:absolute;
+    bottom: 20px;
+     transform: translate(40px, 10%);
+    transition: all 6s;
    
 }
+
+.patogenoCinco{
+    transform: scale(2,1.5);
+    transform: rotate(180deg);
+    transition: all 4s;
+    animation-duration: 10s;
+}
+
+
+.patogenoSeis{
+    transform: rotate(180deg);
+    transition: all 4s;
+    animation-duration: 10s;
+}
+
+
+
+
+
+.patogeno:hover {
+    opacity: 0%;
+      
+    transform: translate(60px, 15%);
+    transition: all 2s;
+    visibility: hidden;
+    cursor:wait;
+}
+
+
+
+.patogenosLineaDos{
+    justify-content:space-evenly;
+    
+}
+
