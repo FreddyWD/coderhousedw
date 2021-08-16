@@ -16,13 +16,32 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/estilosDeSass.css">
     <title>Dioxido de Cloro Uy::Inicio::</title>
-    <meta name="description" content="Dióxido de cloro Uruguay, el lugar donde puedes informarte y comprar dióxido de cloro realizado en 3000ppm">
-    <meta name="keywords" content="Dioxido de cloro, cds, compra dioxido de cloro, protocolos dioxido de cloro,mms, cds uruguay">
+    <meta name="description"
+        content="Dióxido de cloro Uruguay, el lugar donde puedes informarte y comprar dióxido de cloro realizado en 3000ppm">
+    <meta name="keywords"
+        content="Dioxido de cloro, cds, compra dioxido de cloro, protocolos dioxido de cloro,mms, cds uruguay">
 </head>
 
 <body>
+
+    <header class=" headerPrincipal sticky-top d-flex flex-wrap justify-content-center py-3 ">
+        <a href="./index.html"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none navbar-brand">
+            <img src="./img/Logo Dioxido de Cloro Uy.png" alt="">
+        </a>
+
+        <ul class="nav">
+            <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a href="./productos.html" class="nav-link">Productos</a></li>
+            <li class="nav-item"><a href="./testimonios.html" class="nav-link">Testimonios</a></li>
+            <li class="nav-item"><a href="./beneficios.html" class="nav-link">Beneficios</a></li>
+            <li class="nav-item"><a href="./cuenta.html" class="nav-link">Cuenta</a></li>
+            <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </header>
+
     <!--Header y navegación principal modificación de prueba -->
-    <header class="headerPrincipal  animate__animated animate__backInDown  ">
+    <!--<header class="headerPrincipal  nav-bar  ">
         <a href="./index.html"><img src="./img/Logo Dioxido de Cloro Uy.png" alt="logo"></a>
         <nav>
             <ul class="mainMenu">
@@ -34,21 +53,72 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </header>-->
 
 
     <main class="mainIndex container-fluid">
 
         <!-- Seccion principal de beneficios y testimonios 95 Freddy-->
-        <section class="beneficiosDioxido">
-            <h1>Dióxido de Cloro Uruguay</h1>
+
+        <article class="beneficiosDioxido">
+            <div class="cdsUruguay">
+
+                <h1>CDS Uruguay</h1>
+                <h2>Pasa el mouse sobre los PATÓGENOS y verás el efecto del CDS</h2>
+            </div>
+
+            <div class="patogenos">
+                <div class="patogeno patogenoUno">
+                    <img src="./img/bacteria1.svg" alt="">
+                </div>
+
+                <div class="patogeno patogenoDos">
+
+                    <img src="./img/bacteria2.svg" alt="">
+
+                </div>
+
+                <div class="patogeno patogenoTres">
+                    <img src="./img/virus-coronas.svg" alt="">
+                </div>
+            </div>
+            <div class="patogenos patogenosLineaDos">
+                <div class="patogeno patogenoCuatro">
+                    <img src="./img/bacteria3.svg" alt="">
+                </div>
+
+                <div class="patogeno patogenoCinco">
+
+                    <img src="./img/virus1.svg" alt="">
+
+                </div>
+
+                <div class=" patogeno patogenoTres">
+                    <img src="./img/hongo.svg" alt="">
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </article>
+
+
+        <!-- <h1>Dióxido de Cloro Uruguay</h1>
             <h2>Beneficios del Dióxido de Cloro</h2>
             <p class="descripcion">El dióxido de cloro actúa bajo dos principios, el primero oxida los patógenos y el
-                segundo logra la oxigenación de la sangre y los órganos
+                segundo logra la oxigenación de la sangre y los órganos-->
 
         </section>
+        <div class="linea container-fluid">
+
+        </div>
+
         <!--Apartado para los nuevos testimonio-->
-        <div class="testyDolencias">
+        <div class="testyDolencias margenes">
             <section class="nuevosTestimonios">
                 <h2 class="subtitle">Nuevos Testimonios</h2>
                 <iframe id="lbry-iframe" width="560" height="315"
@@ -62,14 +132,18 @@
             <!--Sección de la tabla de posología recomendada-->
 
         </div>
-        <section class="dolenciasPosologia">
+        <caption>
+            <H2>Dolencias y Posología</H2>
+        </caption>
+        <section class="dolenciasPosologia margenes">
+
 
 
             <!--Aplicada la clase Table de Boostrap-->
 
 
             <table class="table table-primary table-striped table-hover" id="tablaDolPos">
-                <caption>Dolencias y Posología</caption>
+
 
                 <tr class=" table-danger">
                     <th>Dolencia</th>
@@ -97,7 +171,18 @@
 
 
         </section>
-        <section class="carouselSection">
+
+        <div class="reglaPatogenos">
+
+            <div class="contenedorTextoReglaPatogenos">
+                
+                <h4 class="textoReglaPatogeno">Nuevos Protocolas contra el Corona Virus</h4>
+                
+            </div>
+
+
+        </div>
+        <section class="carouselSection margenes">
             <!--Slider-->
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -107,7 +192,7 @@
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
@@ -152,17 +237,18 @@
                 </button>
             </div>
         </section>
-        <article class="container">
+        <article class="container ">
 
             <!-- Grilla de bt con cards-->
             <h2>Más beneficios</h2>
-            
+
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3 animate__animated animate__fadeIn">
                     <div class="card" style="width: auto;">
                         <img src="./img/card-1-frasco-cds.jpg" class="card-img-top" alt="Gotas de Dióxido de Cloro">
                         <div class="card-body">
-                            <p class="card-text">Unas gotas de CDS todos los días pueden hacer la diferencia para mantener un buen estado de salud.</p>
+                            <p class="card-text">Unas gotas de CDS todos los días pueden hacer la diferencia para
+                                mantener un buen estado de salud.</p>
                         </div>
                     </div>
                 </div>
@@ -170,7 +256,8 @@
                     <div class="card" style="width: auto;">
                         <img src="./img/card-2-sarcov2-cds.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Una importante barrera para prevenir y combatir el CoronaVirus, estudios demuestras su eficacia.</p>
+                            <p class="card-text">Una importante barrera para prevenir y combatir el CoronaVirus,
+                                estudios demuestras su eficacia.</p>
                         </div>
                     </div>
                 </div>
@@ -178,34 +265,40 @@
                     <div class="card" style="width: auto;">
                         <img src="./img/card-3-salud-cds.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text">Aumento de la salud y del bienestar  que las visitas a los médicos serán cosas del pasado</p>
+                            <p class="card-text">Aumento de la salud y del bienestar que las visitas a los médicos
+                                serán
+                                cosas del pasado</p>
                         </div>
                     </div>
-                </div>                 
+                </div>
                 <div class="col-12 col-md-6 col-lg-3 animate__animated animate__fadeIn">
-                  <div class="card" style="width: auto;">
-                      <img src="./img/card-4-ahorro-salud-cds.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <p class="card-text"> Muchos de los medicamentos que puedas estar utilizando
-                              no van a ser necesarios.</p>
-                      </div>
-                  </div>
+                    <div class="card" style="width: auto;">
+                        <img src="./img/card-4-ahorro-salud-cds.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"> Muchos de los medicamentos que puedas estar utilizando
+                                no van a ser necesarios.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 gy-3 animate__animated animate__fadeIn">
-                     <div class="card" style="width: auto;">
-                         <img src="./img/card-5-Andreas-Kalcker-cds.jpg" class="card-img-top" alt="...">
-                         <div class="card-body">
-                             <p class="card-text"> Nos basamos en la fórmula creada y patentada por el Biofísico Andreas Kalcker</p>
-                         </div>
-                     </div>
+                    <div class="card" style="width: auto;">
+                        <img src="./img/card-5-Andreas-Kalcker-cds.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"> Nos basamos en la fórmula creada y patentada por el Biofísico
+                                Andreas
+                                Kalcker</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 gy-3 animate__animated animate__fadeIn">
                     <div class="card" style="width: auto;">
                         <img src="./img/card-6-Control-calidad-cds.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text"> Control de calidad en cada partida para asegurar los 3000ppm tal cual la fórmula original</p>
+                            <p class="card-text"> Control de calidad en cada partida para asegurar los 3000ppm tal
+                                cual
+                                la fórmula original</p>
                         </div>
                     </div>
                 </div>
@@ -217,12 +310,13 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </article>
         <article">
-            <h2> Noticias </h2>
-            <div class=" container noticias">
+           
+            <div class=" container noticias ">
+                 <h2> Noticias </h2>
                 <div class="noticias__div">
                     <h3>PRIMER ESTUDIO CIENTÍFICO EN SERES HUMANOS CON DIÓXIDO DE CLORO PARA USO TERAPÉUTICO</h3>
                     <p class="noticias__div__p">Una esperanza para acabar con la pandemia de COVID-19.
@@ -232,16 +326,22 @@
                         esperanza para controlarla, en base a los fundamentos científicos revelados en anteriores
                         investigaciones.
 
-                        El dióxido de cloro mostró ser benéfico en el tratamiento de COVID-19, haciendo RT-PCR negativa
-                        a los 7 días en el cien por ciento de los pacientes que lo tomaron durante el estudio clínico,
-                        mitigando rápidamente sus síntomas asociados a esta enfermedad, y reduciendo significativamente
+                        El dióxido de cloro mostró ser benéfico en el tratamiento de COVID-19, haciendo RT-PCR
+                        negativa
+                        a los 7 días en el cien por ciento de los pacientes que lo tomaron durante el estudio
+                        clínico,
+                        mitigando rápidamente sus síntomas asociados a esta enfermedad, y reduciendo
+                        significativamente
                         los parámetros de laboratorio a la normalidad en un espacio de 14 a 21 días.
 
-                        Además, los investigadores observaron que los pacientes que consumieron dióxido de cloro como
-                        tratamiento para el COVID-19, también redujeron sustancialmente los síntomas posteriores a la
+                        Además, los investigadores observaron que los pacientes que consumieron dióxido de cloro
+                        como
+                        tratamiento para el COVID-19, también redujeron sustancialmente los síntomas posteriores a
+                        la
                         enfermedad, en comparación con los pacientes no tratados con ClO2.
 
-                        Estamos ante una solución que puede acabar con la pandemia, ahora comprobado científicamente.
+                        Estamos ante una solución que puede acabar con la pandemia, ahora comprobado
+                        científicamente.
 
                         ¡El CDS salva vidas! Ya tiene la oportunidad de leer el primer estudio clínico multicéntrico
                         llevado a cabo en varios países de América latina que demuestra claramente que el dióxido de
@@ -249,35 +349,45 @@
                 </div>
                 <div class="noticias__div">
                     <h3>El dióxido de cloro está aprobado por ley en Bolivia</h3>
-                    <p class="noticias__div__p noticias__div__p--destacado">En Bolivia se aprobó la ley No. 1351 de 2020
+                    <p class="noticias__div__p noticias__div__p--destacado">En Bolivia se aprobó la ley No. 1351 de
+                        2020
                         que autorizó la elaboración, comercialización, suministro y uso bajo consentimiento de la
-                        solución de dióxido de cloro CDS, como prevención y tratamiento ante la pandemia de COVID-19. Se
+                        solución de dióxido de cloro CDS, como prevención y tratamiento ante la pandemia de
+                        COVID-19. Se
                         constituyó legalmente un comité de ética avalado por el Ministerio de Salud de Bolivia, que
-                        aprobó este protocolo de investigación multicéntrico de alcance internacional, retrospectivo,
+                        aprobó este protocolo de investigación multicéntrico de alcance internacional,
+                        retrospectivo,
                         conformado por cinco universidades (Universidad Técnica de Oruro, Universidad Pública de El
-                        Alto, Universidad Mayor de San Simón, Universidad Autónoma Gabriel René Moreno y el Instituto
-                        Técnico de Yacuiba "Gran Chaco") que a su vez, a través de sus comités de investigación clínica,
-                        científica y ética, están realizando sus propias investigaciones sobre el dióxido de cloro para
+                        Alto, Universidad Mayor de San Simón, Universidad Autónoma Gabriel René Moreno y el
+                        Instituto
+                        Técnico de Yacuiba "Gran Chaco") que a su vez, a través de sus comités de investigación
+                        clínica,
+                        científica y ética, están realizando sus propias investigaciones sobre el dióxido de cloro
+                        para
                         su uso en diferentes aplicaciones.</p>
                 </div>
                 <div class="noticias__div">
                     <h3>CAPACITACIÓN COVID 19</h3>
-                    <p class="noticias__div__p">Tras el inaudito éxito del dióxido de cloro en Bolivia en forma de CDS,
-                        la nueva ley ahora permite el dióxido de cloro para este fin y hay muchos médicos interesados en
+                    <p class="noticias__div__p">Tras el inaudito éxito del dióxido de cloro en Bolivia en forma de
+                        CDS,
+                        la nueva ley ahora permite el dióxido de cloro para este fin y hay muchos médicos
+                        interesados en
                         tener una capacitación en este tema innovador de la medicina.
 
                         A diferencia de otras sustancias farmacéuticas el dióxido de cloro es un oxidante y hay que
                         comprender su forma de funcionar para poder aplicarlo de manera correcta sin cometer errores
-                        para lograr un uso terapéutico eficaz. Las capacitaciones están dirigidas a médicos y personal
+                        para lograr un uso terapéutico eficaz. Las capacitaciones están dirigidas a médicos y
+                        personal
                         sanitario e impartido por los médicos directores de investigación de COMUSAV.
 
-                        Está capacitación enseña el uso oral y también intravenoso enfocar específicamente a pacientes
+                        Está capacitación enseña el uso oral y también intravenoso enfocar específicamente a
+                        pacientes
                         afectados por covid-19.</p>
                 </div>
             </div>
-        </article>
+            </article>
     </main>
-    
+
 
     <!--Pie de página a redes sociales-->
     <footer>

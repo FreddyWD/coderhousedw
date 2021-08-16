@@ -6,21 +6,27 @@
 }
 
 /* Entrega clase 10 */
-    /* Slider en el index */
-     /* Modal con boton de ofertas y formulario en página productos*/ 
+/* Slider en el index */
+/* Modal con boton de ofertas y formulario en página productos*/
 
 .headerPrincipal {
-    position: sticky;
-    top: 0px;
+
+
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
-    background-color: #A3DFF3;
-    height: 60px;
-    padding: 20px;
+    background-color: rgba(165, 209, 247, .9);
+    border: 0px;
+    height: 90px;
+    padding: 30px;
+    box-shadow: -5px 11px 21px -13px rgba(0, 0, 0, 0.75);
+    /*background-color: #A3DFF3;*/
+
 }
 
-.ofertaButton{
+
+
+.ofertaButton {
     display: flex;
     justify-content: center;
 }
@@ -45,9 +51,15 @@
 
 }
 
+.nav-link {
+    color: #9588DB;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
 
 h1 {
-    color: #88DBA1;
+    color: #9588DB;
     font-size: 60px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
@@ -78,41 +90,42 @@ h3 {
 }
 
 /* Centrando el carousel*/
-.carouselSection{
+.carouselSection {
     display: flex;
     justify-content: center;
-}
-/*Cambiando tamaño del carousel*/
-.carousel {
-   
-    width: 800px;
-    height: auto;
-}
-
-.carouselSection h4{
-    color: coral;
-    font-weight: 800;
-    font-size: 36px;
     
 }
 
-.carousel-caption{
+/*Cambiando tamaño del carousel*/
+.carousel {
+
+    width: 800px;
+    height: auto;
+    margin:15px 0;
+}
+
+.carouselSection h4 {
+    color: coral;
+    font-weight: 800;
+    font-size: 36px;
+
+}
+
+.carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
-ul {
-    background-color: antiquewhite;
-}
+
 
 #listOrder {
 
-    
+
     list-style-type: upper-alpha;
 }
 
@@ -148,7 +161,7 @@ td {
     padding: 5px;
 }
 
-.cuentaMain{
+.cuentaMain {
     margin-left: 10px;
 }
 
@@ -166,13 +179,28 @@ td {
 
 /*clase de la sección beneficios del CDS*/
 .beneficiosDioxido {
-    
-    margin-top: 10px;
-    background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
+
+    display: flex-inline;
+    background-image: url("../img/cds-dioxido-de-cloro-uruguay.png");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     width: auto;
     height: auto;
+
+
+
+    min-height: 650px;
+
+    /* Efecto Parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.margenes{
 
 }
 
@@ -198,8 +226,10 @@ footer {
     justify-content: space-around;
 
 }
+
 /* Convirtiendo en flex al div */
 .testyDolencias {
+   
     display: flex;
     justify-content: center;
     grid-area: area2;
@@ -227,7 +257,25 @@ footer {
     grid-area: area3;
     justify-content: center;
     align-items: center;
+   
 }
+
+.reglaPatogenos {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px 0px;
+
+    background-image: url("../img/back-red-virus-1920x649.jpg");
+    background-attachment: fixed, scroll;
+
+    width: auto;
+    height: 200px;
+}
+
 /* Animación para h1 y h2*/
 @keyframes aparecer {
 
@@ -251,118 +299,213 @@ footer {
 
 
 .etiquetaProductos {
-    
+
     padding: 10px;
     text-align: center;
-   
+
 }
 
-.etiquetaProductos img{
+.etiquetaProductos img {
 
     width: 600px;
     height: 400px;
 }
 
-.formMain{
+.formMain {
     margin-left: 10px;
 }
+
 /* Cambio los colores por defecto de la clase btn-primary de boostrap*/
-.btn-primary{
+.btn-primary {
     background-color: rgb(228, 174, 179);
     border: #88DBA1;
-    
-}
-/* Cambio el color en el hover de la clase btn-primary de Boostrap*/
-.btn-primary:hover{
 
-    background-color:#88DBA1;
-    
+}
+
+/* Cambio el color en el hover de la clase btn-primary de Boostrap*/
+.btn-primary:hover {
+
+    background-color: #88DBA1;
+
 }
 
 /*Agrego los MediaQuery*/
-@media only screen and (max-width:600px) {
+
+@media only screen and (min-width:576px) {
 
 
 
     .beneficiosDioxido {
-        background-image: url("../img/dioxido-de-cloro-600.jpg");
-        background-size: contain;
+        padding-top: 60px;
     }
 
-    .mainIndex {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "area1""area2"" area3";
-        justify-content: center;
-        grid-row-gap: 2px;
 
+
+
+
+    .elementos {
+        display: flex;
     }
 
-    h1 {
-        font-size: 45px;
-        animation-duration: 2s;
-        animation-name: aparecer;
 
-    }
-
-    h2 {
-        font-size: 32px;
-        animation-duration: 3s;
-        animation-name: aparecer;
-    }
 
 
 
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (max-width:768px) {
 
     h1 {
-        color: black;
-
-    }
-
-    .beneficiosDioxido {
-        background-image: url("../img/dioxido-de-cloro-750.jpg");
-        background-size: cover;
-    }
-}
-
-@media only screen and (min-width:768px) {
-
-    h1 {
-        color: bisque;
-        animation-duration: 2s;
-        animation-name: aparecer;
+        font-size: xx-large;
+        margin-top: 60PX;
     }
 
     h2 {
 
-        animation-duration: 3s;
-        animation-name: aparecer;
+        font-size: x-large;
     }
 
     .beneficiosDioxido {
-        background-image: url("../img/dioxido-de-cloro-850.jpg");
-        background-size: cover;
+        /*background-image: url("../img/dioxido-de-cloro-850.jpg");
+        background-size: cover;*/
     }
+
+
+
+    .nav {
+        background-color: rgb(165, 209, 247);
+
+
+
+    }
+
+    .nav-link {
+
+        font-size: smaller;
+    }
+
+
 }
 
 @media only screen and (min-width:992px) {
 
     .beneficiosDioxido {
-        background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
-        background-size: cover;
+        /* background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
+        background-size: cover;*/
     }
 
 
+
+
+
+
 }
+
 /* Efecto en hover y sombra*/
-.card-img-top:hover{
+.card-img-top:hover {
 
     transform: scale(1.1);
     transition: 1s;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+    color: #9588DB;
+}
+
+.linea {
+    position: relative;
+    top: -100px;
+    background-image: url("../img/linea.svg");
+    height: 100px;
+}
+
+.patogenos {
+    position: relative;
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-around;
+}
+
+
+
+.patogenoDos {
+    transform: rotate(360deg);
+    transition: all 8s;
+    animation-duration: 10s;
+}
+
+.patogenoUno {
+    transform: translate(40px, 25%);
+    transition: all 10s;
+    animation-duration: 10s;
+}
+
+.patogenoTres {
+    transform: rotate(180deg);
+    transition: all 4s;
+    animation-duration: 10s;
+}
+
+.patogenoCuatro {
+    position: absolute;
+    bottom: 20px;
+    transform: translate(40px, 10%);
+    transition: all 6s;
+
+}
+
+.patogenoCinco {
+    transform: scale(2, 1.5);
+    transform: rotate(180deg);
+    transition: all 4s;
+    animation-duration: 10s;
+}
+
+
+.patogenoSeis {
+    transform: rotate(360eg);
+    transition: all 15s;
+    animation-duration: 10s;
+}
+
+
+
+
+
+.patogeno:hover {
+    opacity: 0%;
+
+    transform: translate(60px, 15%);
+    transition: all 2s;
+    visibility: hidden;
+    cursor: wait;
+}
+
+
+
+.patogenosLineaDos {
+    justify-content: space-evenly;
+
+}
+
+
+.contenedorTextoReglaPatogenos {
+    position: relative;
+
+}
+
+.textoReglaPatogeno {
+    
+
+
+    font-size: 46px;
+    font-family: 'Fredoka One', cursive;
+    color: aliceblue;
+    text-align: center;
+}
+
+.margenes{
+    margin: 50px 0px;
 }
