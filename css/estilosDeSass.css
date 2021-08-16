@@ -6,13 +6,12 @@
 /* Se contruye un mixin para ser utilizado en los párrafos*/
 /* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica y modificador*/
 .informacionTecnica {
-  background-color: #ffebeb; }
+  background-color: #ffebeb;
+  padding: 30px 0; }
   .informacionTecnica__lista {
     list-style: circle; }
   .informacionTecnica__item--destacado {
     font-size: 22px; }
-  .informacionTecnica__h1 {
-    color: red; }
 
 /* Aplicando estilos con SASS + BEM y modificador lo beneficios*/
 .beneficiosOl {

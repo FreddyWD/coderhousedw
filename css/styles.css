@@ -93,6 +93,7 @@ h3 {
 .carouselSection {
     display: flex;
     justify-content: center;
+    
 }
 
 /*Cambiando tamaño del carousel*/
@@ -100,6 +101,7 @@ h3 {
 
     width: 800px;
     height: auto;
+    margin:15px 0;
 }
 
 .carouselSection h4 {
@@ -198,6 +200,10 @@ td {
 
 }
 
+.margenes{
+
+}
+
 .nuevosTestimonios {
     align-items: center;
     text-align: center;
@@ -223,6 +229,7 @@ footer {
 
 /* Convirtiendo en flex al div */
 .testyDolencias {
+   
     display: flex;
     justify-content: center;
     grid-area: area2;
@@ -250,6 +257,23 @@ footer {
     grid-area: area3;
     justify-content: center;
     align-items: center;
+   
+}
+
+.reglaPatogenos {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px 0px;
+
+    background-image: url("../img/back-red-virus-1920x649.jpg");
+    background-attachment: fixed, scroll;
+
+    width: auto;
+    height: 200px;
 }
 
 /* Animación para h1 y h2*/
@@ -332,8 +356,8 @@ footer {
 @media only screen and (max-width:768px) {
 
     h1 {
-       font-size: xx-large;
-       margin-top: 60PX;
+        font-size: xx-large;
+        margin-top: 60PX;
     }
 
     h2 {
@@ -406,41 +430,43 @@ footer {
 
 
 
-.patogenoDos{
+.patogenoDos {
     transform: rotate(360deg);
     transition: all 8s;
     animation-duration: 10s;
 }
-.patogenoUno{
+
+.patogenoUno {
     transform: translate(40px, 25%);
     transition: all 10s;
     animation-duration: 10s;
 }
-.patogenoTres{
+
+.patogenoTres {
     transform: rotate(180deg);
     transition: all 4s;
     animation-duration: 10s;
 }
 
-.patogenoCuatro{
-    position:absolute;
+.patogenoCuatro {
+    position: absolute;
     bottom: 20px;
-     transform: translate(40px, 10%);
+    transform: translate(40px, 10%);
     transition: all 6s;
-   
+
 }
 
-.patogenoCinco{
-    transform: scale(2,1.5);
+.patogenoCinco {
+    transform: scale(2, 1.5);
     transform: rotate(180deg);
     transition: all 4s;
     animation-duration: 10s;
 }
 
 
-.patogenoSeis{
-    transform: rotate(180deg);
-    transition: all 4s;
+.patogenoSeis {
+    transform: rotate(360eg);
+    transition: all 15s;
     animation-duration: 10s;
 }
 
@@ -450,17 +476,36 @@ footer {
 
 .patogeno:hover {
     opacity: 0%;
-      
+
     transform: translate(60px, 15%);
     transition: all 2s;
     visibility: hidden;
-    cursor:wait;
+    cursor: wait;
 }
 
 
 
-.patogenosLineaDos{
-    justify-content:space-evenly;
+.patogenosLineaDos {
+    justify-content: space-evenly;
+
+}
+
+
+.contenedorTextoReglaPatogenos {
+    position: relative;
+
+}
+
+.textoReglaPatogeno {
     
+
+
+    font-size: 46px;
+    font-family: 'Fredoka One', cursive;
+    color: aliceblue;
+    text-align: center;
 }
 
+.margenes{
+    margin: 50px 0px;
+}
