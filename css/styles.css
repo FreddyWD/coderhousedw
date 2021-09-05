@@ -7,6 +7,8 @@
 
 
 
+
+
 .headerPrincipal {
 
 
@@ -161,8 +163,14 @@ td {
     padding: 5px;
 }
 
-.cuentaMain {
-    margin-left: 10px;
+.cuenta {
+
+    margin-top: 30px;
+
+    padding: 20px;
+    -webkit-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
 }
 
 /*Parrafo ref a descripción de seccion beneficios del  CDS*/
@@ -221,7 +229,8 @@ footer {
 
 .testimoniosVideos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+
 
 }
 
@@ -263,6 +272,10 @@ footer {
     height: 200px;
 }
 
+.testimoniosH1 {
+    margin-top: 50px;
+}
+
 /* Animación para h1 y h2*/
 @keyframes aparecer {
 
@@ -299,7 +312,12 @@ footer {
 }
 
 .formMain {
+    margin-top: 30px;
     margin-left: 10px;
+    padding: 20px;
+    -webkit-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
 }
 
 /* Cambio los colores por defecto de la clase btn-primary de boostrap*/
@@ -338,7 +356,12 @@ footer {
 
 
 
+
+
+
 }
+
+@media only screen and (max-width:300px) {}
 
 @media only screen and (max-width:768px) {
 
@@ -351,6 +374,21 @@ footer {
 
         font-size: x-large;
     }
+
+    .informacionTecnica__h1 {
+        padding: 40px;
+    }
+
+    .nuevosTestimonios {
+        display: none;
+    }
+
+    .testimoniosVideos {
+        display: none;
+    }
+
+
+
 
 
 
@@ -377,11 +415,11 @@ footer {
 .opac:hover {
     transition: 1s;
     opacity: 1;
-    transform:scale(1.03);
+    transform: scale(1.03);
     -webkit-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
     box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
-  
+
 }
 
 
@@ -421,23 +459,144 @@ footer {
 .patogenoTres {
     transform: rotate(180deg);
     transition: all 4s;
-    animation-duration: 10s;
+    position: relative;
+
+
 }
 
 .patogenoCuatro {
-    position: absolute;
-    bottom: 20px;
-    transform: translate(40px, 10%);
-    transition: all 6s;
+
+    transition: all 10s;
+    position: relative;
+    animation-duration: 2s;
+    animation-name: pat3;
 
 }
 
 .patogenoCinco {
     transform: scale(2, 1.5);
-    transform: rotate(180deg);
     transition: all 4s;
     animation-duration: 10s;
+    position: relative;
+
 }
+
+#pat1 {
+    animation-name: palp;
+    animation-duration: 2s;
+    animation-delay: 100ms;
+    
+
+}
+
+#pat2{
+
+    animation-name: palp;
+    animation-duration: 4s;
+    animation-delay: 100ms;
+
+}
+
+#pat3 {
+
+    animation-name: anima3;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+#pat4 {
+
+    animation-name: anima2;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+#pat5 {
+    animation-name: anima1;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes anima1 {
+    0% {
+
+        top: 10px;
+    }
+
+    50% {
+
+        top: 80px;
+        transform: rotate(180deg);
+    }
+
+    100% {
+
+        top: 20px;
+    }
+
+
+}
+
+@keyframes anima2 {
+    0% {
+
+        top: 0px;
+    }
+
+    50% {
+
+        top: 50px;
+        transform: rotate(360deg);
+    }
+
+    100% {
+
+        top: 0px;
+    }
+}
+
+@keyframes anima3 {
+    0% {
+
+        left: 0px;
+    }
+
+    50% {
+
+        transform: translate(150px, 50px);
+    }
+
+    100% {
+
+        transform: translate(-150px, -50px);
+
+
+    }
+}
+
+@keyframes palp {
+
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+     100% {
+         opacity: 0.9;
+     }
+}
+
+
 
 
 .patogenoSeis {
@@ -446,17 +605,33 @@ footer {
     animation-duration: 10s;
 }
 
+.zoom:hover {
+
+    transform: scale(1.03);
+    -webkit-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    transition: 500ms;
+
+}
+
+.zoom {
+    margin: 8px;
+}
+
 
 
 
 
 .patogeno:hover {
-    opacity: 0%;
 
-    transform: translate(60px, 15%);
+    opacity: 0%;
     transition: all 2s;
     visibility: hidden;
     cursor: wait;
+    
+    
+
 }
 
 
@@ -486,6 +661,20 @@ footer {
     margin: 50px 0px;
 }
 
-.opac{
-    opacity: 0.4;
+.opac {
+    opacity: 0.5;
+}
+
+.accordion-button {
+    color: #9588DB;
+}
+
+.productos {
+    justify-content: space-evenly;
+
+
+}
+
+.beneficios {
+    justify-content: center;
 }
