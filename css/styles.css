@@ -5,22 +5,16 @@
 
 }
 
-/* Entrega clase 10 */
-/* Slider en el index */
-/* Modal con boton de ofertas y formulario en página productos*/
 
 .headerPrincipal {
 
-
     display: flex;
-
     align-items: center;
     background-color: rgba(165, 209, 247, .9);
     border: 0px;
     height: 90px;
     padding: 30px;
     box-shadow: -5px 11px 21px -13px rgba(0, 0, 0, 0.75);
-    /*background-color: #A3DFF3;*/
 
 }
 
@@ -64,6 +58,7 @@ h1 {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.2);
     font-family: 'Fredoka One', cursive;
+    text-shadow: -3px 3px #ffffff;
 }
 
 h2 {
@@ -71,6 +66,7 @@ h2 {
     font-family: 'Fredoka One', cursive;
     font-size: 45px;
     text-align: center;
+    text-shadow: -3px 3px #ffffff;
 
 
 }
@@ -93,7 +89,7 @@ h3 {
 .carouselSection {
     display: flex;
     justify-content: center;
-    
+
 }
 
 /*Cambiando tamaño del carousel*/
@@ -101,7 +97,7 @@ h3 {
 
     width: 800px;
     height: auto;
-    margin:15px 0;
+    margin: 15px 0;
 }
 
 .carouselSection h4 {
@@ -161,8 +157,14 @@ td {
     padding: 5px;
 }
 
-.cuentaMain {
-    margin-left: 10px;
+.cuenta {
+
+    margin-top: 30px;
+
+    padding: 20px;
+    -webkit-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
 }
 
 /*Parrafo ref a descripción de seccion beneficios del  CDS*/
@@ -200,9 +202,7 @@ td {
 
 }
 
-.margenes{
 
-}
 
 .nuevosTestimonios {
     align-items: center;
@@ -223,13 +223,12 @@ footer {
 
 .testimoniosVideos {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: center;
 }
 
 /* Convirtiendo en flex al div */
 .testyDolencias {
-   
+
     display: flex;
     justify-content: center;
     grid-area: area2;
@@ -238,28 +237,13 @@ footer {
 
 }
 
-
-/* Eliminado Grid en el main del index*/
-/*.mainIndex {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr 1fr;
-    grid-template-areas: "area1"
-        "area2"
-        "area3";
-    justify-content: center;
-    grid-row-gap: 10px;
-
-}*/
-
 .dolenciasPosologia {
     display: flex;
     grid-area: area3;
     justify-content: center;
     align-items: center;
-   
-}
 
+}
 .reglaPatogenos {
 
 
@@ -276,6 +260,10 @@ footer {
     height: 200px;
 }
 
+.testimoniosH1 {
+    margin-top: 50px;
+}
+
 /* Animación para h1 y h2*/
 @keyframes aparecer {
 
@@ -288,8 +276,6 @@ footer {
     }
 
 }
-
-
 
 .productos {
     display: flex;
@@ -312,7 +298,12 @@ footer {
 }
 
 .formMain {
+    margin-top: 30px;
     margin-left: 10px;
+    padding: 20px;
+    -webkit-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
 }
 
 /* Cambio los colores por defecto de la clase btn-primary de boostrap*/
@@ -351,7 +342,12 @@ footer {
 
 
 
+
+
+
 }
+
+
 
 @media only screen and (max-width:768px) {
 
@@ -365,12 +361,17 @@ footer {
         font-size: x-large;
     }
 
-    .beneficiosDioxido {
-        /*background-image: url("../img/dioxido-de-cloro-850.jpg");
-        background-size: cover;*/
+    .informacionTecnica__h1 {
+        padding: 40px;
     }
 
+    .nuevosTestimonios {
+        display: none;
+    }
 
+    .testimoniosVideos {
+        display: none;
+    }
 
     .nav {
         background-color: rgb(165, 209, 247);
@@ -387,28 +388,20 @@ footer {
 
 }
 
-@media only screen and (min-width:992px) {
-
-    .beneficiosDioxido {
-        /* background-image: url("../img/dioxido-decloro-uruguay-principal-bg.png");
-        background-size: cover;*/
-    }
-
-
-
-
-
-
-}
+@media only screen and (min-width:992px) {}
 
 /* Efecto en hover y sombra*/
-.card-img-top:hover {
-
-    transform: scale(1.1);
+.opac:hover {
     transition: 1s;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transform: scale(1.03);
+    -webkit-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+
 }
+
+
 
 .nav-link {
     color: #9588DB;
@@ -420,6 +413,8 @@ footer {
     background-image: url("../img/linea.svg");
     height: 100px;
 }
+
+/*Patógenos y animaciones*/
 
 .patogenos {
     position: relative;
@@ -445,24 +440,143 @@ footer {
 .patogenoTres {
     transform: rotate(180deg);
     transition: all 4s;
-    animation-duration: 10s;
+    position: relative;
+
+
 }
 
 .patogenoCuatro {
-    position: absolute;
-    bottom: 20px;
-    transform: translate(40px, 10%);
-    transition: all 6s;
+
+    transition: all 10s;
+    position: relative;
+    animation-duration: 2s;
+    animation-name: pat3;
 
 }
 
 .patogenoCinco {
     transform: scale(2, 1.5);
-    transform: rotate(180deg);
     transition: all 4s;
     animation-duration: 10s;
+    position: relative;
+
 }
 
+#pat1 {
+    animation-name: palp;
+    animation-duration: 2s;
+    animation-delay: 100ms;
+
+
+}
+
+#pat2 {
+
+    animation-name: palp;
+    animation-duration: 4s;
+    animation-delay: 100ms;
+
+}
+
+#pat3 {
+
+    animation-name: anima3;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+#pat4 {
+
+    animation-name: anima2;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+#pat5 {
+    animation-name: anima1;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes anima1 {
+    0% {
+
+        top: 10px;
+    }
+
+    50% {
+
+        top: 80px;
+        transform: rotate(180deg);
+    }
+
+    100% {
+
+        top: 20px;
+    }
+
+
+}
+
+@keyframes anima2 {
+    0% {
+
+        top: 0px;
+    }
+
+    50% {
+
+        top: 50px;
+        transform: rotate(360deg);
+    }
+
+    100% {
+
+        top: 0px;
+    }
+}
+
+@keyframes anima3 {
+    0% {
+
+        left: 0px;
+    }
+
+    50% {
+
+        transform: translate(150px, 50px);
+    }
+
+    100% {
+
+        transform: translate(-150px, -50px);
+
+
+    }
+}
+
+@keyframes palp {
+
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
 
 .patogenoSeis {
     transform: rotate(360eg);
@@ -470,14 +584,9 @@ footer {
     animation-duration: 10s;
 }
 
-
-
-
-
 .patogeno:hover {
-    opacity: 0%;
 
-    transform: translate(60px, 15%);
+    opacity: 0%;
     transition: all 2s;
     visibility: hidden;
     cursor: wait;
@@ -487,25 +596,52 @@ footer {
 
 .patogenosLineaDos {
     justify-content: space-evenly;
+}
+
+.zoom:hover {
+    transform: scale(1.03);
+    -webkit-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
+    transition: 500ms;
 
 }
 
-
+/*Margen clase zoom para efectos*/
+.zoom {
+    margin: 8px;
+}
 .contenedorTextoReglaPatogenos {
     position: relative;
 
 }
 
 .textoReglaPatogeno {
-    
-
-
     font-size: 46px;
     font-family: 'Fredoka One', cursive;
     color: aliceblue;
     text-align: center;
 }
 
-.margenes{
+.margenes {
     margin: 50px 0px;
 }
+
+.opac {
+    opacity: 0.5;
+}
+
+.accordion-button {
+    color: #9588DB;
+}
+
+.productos {
+    justify-content: space-evenly;
+
+
+}
+
+.beneficios {
+    justify-content: center;
+}
+
