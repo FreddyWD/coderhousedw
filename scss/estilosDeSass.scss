@@ -24,20 +24,13 @@ $tamañoH2: 2px;
     border-color: $colorBorde;
     box-shadow: 15px 6px rgb(203, 221, 221);
 
-
 }
 
-
-
 /* Aplicando estilos con SASS + BEM a productosSeccionInfTecnica y modificador*/
-.informacionTecnica {
-
-    
+.informacionTecnica {    
 
     background-color: rgb(255, 235, 235);
-
     &__lista {
-
 
         list-style: circle;
 

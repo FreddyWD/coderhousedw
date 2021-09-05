@@ -6,21 +6,15 @@
 }
 
 
-
-
-
 .headerPrincipal {
 
-
     display: flex;
-
     align-items: center;
     background-color: rgba(165, 209, 247, .9);
     border: 0px;
     height: 90px;
     padding: 30px;
     box-shadow: -5px 11px 21px -13px rgba(0, 0, 0, 0.75);
-
 
 }
 
@@ -230,8 +224,6 @@ footer {
 .testimoniosVideos {
     display: flex;
     justify-content: center;
-
-
 }
 
 /* Convirtiendo en flex al div */
@@ -245,9 +237,6 @@ footer {
 
 }
 
-
-
-
 .dolenciasPosologia {
     display: flex;
     grid-area: area3;
@@ -255,7 +244,6 @@ footer {
     align-items: center;
 
 }
-
 .reglaPatogenos {
 
 
@@ -288,8 +276,6 @@ footer {
     }
 
 }
-
-
 
 .productos {
     display: flex;
@@ -361,7 +347,7 @@ footer {
 
 }
 
-@media only screen and (max-width:300px) {}
+
 
 @media only screen and (max-width:768px) {
 
@@ -386,13 +372,6 @@ footer {
     .testimoniosVideos {
         display: none;
     }
-
-
-
-
-
-
-
 
     .nav {
         background-color: rgb(165, 209, 247);
@@ -434,6 +413,8 @@ footer {
     background-image: url("../img/linea.svg");
     height: 100px;
 }
+
+/*Patógenos y animaciones*/
 
 .patogenos {
     position: relative;
@@ -485,11 +466,11 @@ footer {
     animation-name: palp;
     animation-duration: 2s;
     animation-delay: 100ms;
-    
+
 
 }
 
-#pat2{
+#pat2 {
 
     animation-name: palp;
     animation-duration: 4s;
@@ -591,13 +572,11 @@ footer {
     50% {
         opacity: 0.5;
     }
-     100% {
-         opacity: 0.9;
-     }
+
+    100% {
+        opacity: 0.9;
+    }
 }
-
-
-
 
 .patogenoSeis {
     transform: rotate(360eg);
@@ -605,8 +584,21 @@ footer {
     animation-duration: 10s;
 }
 
-.zoom:hover {
+.patogeno:hover {
 
+    opacity: 0%;
+    transition: all 2s;
+    visibility: hidden;
+    cursor: wait;
+}
+
+
+
+.patogenosLineaDos {
+    justify-content: space-evenly;
+}
+
+.zoom:hover {
     transform: scale(1.03);
     -webkit-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: -1px 11px 19px -1px rgba(0, 0, 0, 0.35);
@@ -615,42 +607,16 @@ footer {
 
 }
 
+/*Margen clase zoom para efectos*/
 .zoom {
     margin: 8px;
 }
-
-
-
-
-
-.patogeno:hover {
-
-    opacity: 0%;
-    transition: all 2s;
-    visibility: hidden;
-    cursor: wait;
-    
-    
-
-}
-
-
-
-.patogenosLineaDos {
-    justify-content: space-evenly;
-
-}
-
-
 .contenedorTextoReglaPatogenos {
     position: relative;
 
 }
 
 .textoReglaPatogeno {
-
-
-
     font-size: 46px;
     font-family: 'Fredoka One', cursive;
     color: aliceblue;
@@ -678,3 +644,4 @@ footer {
 .beneficios {
     justify-content: center;
 }
+
